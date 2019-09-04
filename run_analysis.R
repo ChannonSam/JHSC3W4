@@ -196,5 +196,5 @@ tidy_sum <- tidy_all %>%
 
 # Write this to file:
 
-write.csv(tidy_all, paste0(home, "/tidy_data.csv"))
-write.csv(tidy_sum, paste0(home, "/tidy_sum.csv"))
+write.table(tidy_all, paste0(home, "/tidy_data.txt"), row.names = FALSE)
+write.table(tidy_sum, paste0(home, "/tidy_sum.txt"), row.names = FALSE)
